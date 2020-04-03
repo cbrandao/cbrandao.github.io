@@ -20,7 +20,6 @@ var whisps = new Image();
 var floaties = new Image();
 var planetShadow = new Image();
 var planets = new Image();
-var borderShadow = new Image();
 var border = new Image();
 var stars = new Image();
 
@@ -185,16 +184,13 @@ window.addEventListener("mouseup", function(event) {
     endGesture();
 });
 
-window.addEventListener("mouseup", function(event) {
-    endGesture();
-})
 
 function endGesture(){
     moving = false;
 
     pointer.x = 0;
     pointer.y = 0;
-}
+};
 
 // intialize motion variables
 var motionInitial = {
