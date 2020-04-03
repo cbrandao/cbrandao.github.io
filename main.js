@@ -28,49 +28,49 @@ var stars = new Image();
 var layerList = [
     {
         "image": background,
-        "src": "./images/parallax-1.png",
+        "src": "./images/Parallax-1.png",
         "z_index": -2.25,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": whisps,
-        "src": "./images/parallax-2.png",
+        "src": "./images/Parallax-2.png",
         "z_index": -1.3,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": floaties,
-        "src": "./images/parallax-3.png",
+        "src": "./images/Parallax-3.png",
         "z_index": -0.7,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": planetShadow,
-        "src": "./images/parallax-4.png",
+        "src": "./images/Parallax-4.png",
         "z_index": -2.2,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": planets,
-        "src": "./images/parallax-5.png",
+        "src": "./images/Parallax-5.png",
         "z_index": -0.3,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": border,
-        "src": "./images/parallax-7.png",
+        "src": "./images/Parallax-7.png",
         "z_index": 0,
         "position": {x: 0, y: 0}
     },
 
     {
         "image": stars,
-        "src": "./images/parallax-8.png",
+        "src": "./images/Parallax-8.png",
         "z_index": 1,
         "position": {x: 0, y: 0}
     }
