@@ -1,0 +1,248 @@
+/* ANIMATION INFO*/
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* FOR ALL PAGES */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+     font-family: 'Nanum Gothic', sans-serif;
+     margin:0;
+     margin-bottom: 15px;
+     
+}
+
+h1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 70px;
+}
+
+h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 40px;
+
+}
+
+/* Animation for all elements except the navigation bar */
+.row{
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.5s;  
+
+}
+
+
+/* HOME/INDEX PAGE */
+.intro-display{
+    text-align: center;
+    margin-top: 90px;
+    line-height: 170%;
+    /*background-color: #ffc83d;*/
+    background-color: #ffd059;
+    color: #231f20;
+}
+
+
+/* Longer/more dramatic animation for the home page*/
+.intro-display{   
+
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+    animation-duration: 0.75s;  
+    
+    margin-top: 100px;
+}
+
+.button{
+    margin-top: 30px;
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 40px;
+    color: #231f20;
+
+    background-color: #ffd059;
+    display: inline-block;
+    border: #231f20 solid;
+    border-radius: 20px;
+    padding: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: #ffd059;
+    background-color: #231f20;
+    text-decoration: none;
+}
+
+.divider{
+    width: 19px;
+    height:auto;
+    display:inline-block;
+}
+
+#nyt-logo{
+    height: 100px;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* NAV PANEL - Shows on Movies, Food, & Fashion pages */
+nav{
+    background: #ffd059;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    font-size: 14px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* 0 refers to top and bottom */
+    padding: 0;
+
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 1px;
+}
+
+nav ul{
+    margin: 0 auto;
+    
+    padding: 30px;
+    padding-left: 70px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    transition: ease-in-out 0.5s;
+    text-decoration: underline;
+
+}
+
+#selected{
+    text-decoration: underline;
+}
+
+
+
+/* CONTENT PAGES - Movies, Food, & Fashion */
+
+header{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #ffd059;
+    /*text-align: center;*/
+}
+header h1 {
+    line-height: 70%;
+}
+
+.row{
+    padding-top: 20px;
+}
+
+/* Displays articles on the left-side panel*/
+.all-titles
+{
+    font-size: 13px;
+    line-height: normal;
+    color: black;
+
+
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    
+    border: none;
+    background: none;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.all-titles:hover{
+    
+    background:black;
+    color:white;
+}
+
+.divider-2{
+    height: 6px;
+    width: auto;
+}
+
+/* Displays individual article content on right-hand section */
+.col-xl, .col-lg, .col-8{
+    text-align: center;
+    border:black;
+    border-style: solid;
+}
+
+.col-lg h2 {
+    padding-top: 35px;
+}
+
+.article-body{
+    text-align: left;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    display: inline-flex;
+
+}
+
+.article-body p{
+    line-height: 170%;
+}
+
+
+.the-image{
+    height: 140px;
+    width: 210px;
+}
+
+.col-lg .button, .col-8 .button{
+    font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-size: 17px;
+    color: black;
+    background: white;
+    border: black solid;
+    border-radius: 20px;
+    
+    padding: 20px;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+ .col-lg .button:hover, .col-8 .button:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    
+}
+
+.food-title{
+    padding-top: 15px;
+    font-size: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}

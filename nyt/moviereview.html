@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>the movie review</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+
+        
+    </head>
+    <body onload = "getMovieInfo();">
+        <nav>
+            
+            <ul>
+                <li><a href="moviereview.html" id="selected">movies</a></li>
+                <li><a href="food.html">food</a></li>
+                <li><a href="fashion.html">fashion</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h1>the movie review</h1>
+                        <h4>Discover the movies NYT writers are currently talking about by clicking on a title below. </h4>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+
+                <!--left column
+                <div class="col-sm">
+                    <figure>
+                        <img src="movieimg.jpg" alt="Movie theater at night">
+                        <figcaption>Photo by Jeff Pierre on Unsplash</figcaption>
+                    </figure>
+                </div>-->
+                
+
+                <!--2nd column-->
+                <div class="col-auto">
+                    <div id="titles-section">
+                        <!--movie titles will be loaded here-->
+                    </div>
+                </div>
+
+                <div class="col-lg" id="scroll-here">
+                    <h2 id="show-title">Choose a movie title<!--clicked movie title will be displayed here--></h2>
+                    <h5 id="show-byline">Please note that this list is often updated, so not all titles will be GFA 👍 <!--clicked movie title's byline will be displayed here--></h5>
+
+                    
+                    <div class="article-body">
+                        <figure id="show-photo"><!--movie photos will go here--></figure>
+                        <p id="show-summary" ><!--movie summaries will go here--></p>
+                    </div>
+
+                    <!--Will display a button to the main article from NYT-->    
+                    <div id="show-full"></div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+    </body> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "main5.js"></script>
+
+</html>

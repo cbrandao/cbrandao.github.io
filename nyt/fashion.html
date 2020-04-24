@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>the fashion update</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+
+        
+    </head>
+    <body onload = "getMovieInfo();">
+        <nav>
+            
+            <ul>
+                <li><a href="moviereview.html">movies</a></li>
+                <li><a href="food.html" >food</a></li>
+                <li><a href="fashion.html" id="selected">fashion</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm">
+                        <h1>the fashion update</h1>
+                        <h4>Discover the latest fashion from NYT writers by clicking on a title below. </h4>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+
+                <!--left column
+                <div class="col-sm">
+                    <figure>
+                        <img src="movieimg.jpg" alt="Movie theater at night">
+                        <figcaption>Photo by Jeff Pierre on Unsplash</figcaption>
+                    </figure>
+                </div>-->
+                
+
+                <!--2nd column-->
+                <div class="col-4">
+                    <div id="titles-section">
+                        <!--movie titles will be loaded here-->
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <h2 id="show-title" class="food-title">Choose an article<!--clicked movie title will be displayed here--></h2>
+                    <h5 id="show-byline">& it will appear here 👍 <!--clicked movie title's byline will be displayed here--></h5>
+                    
+                    <div class="article-body">
+                        <figure id="show-photo"><!--movie photos will go here--></figure>
+                        <p id="show-summary" ><!--movie summaries will go here--></p>
+                    </div>
+                    
+                     <div id="show-full"><!--Will display a button to the main article--></div>
+                </div>
+                
+            </div>
+        </div>
+    </body> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "main7.js"></script>
+
+</html>
